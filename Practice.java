@@ -13,8 +13,6 @@ public class Practice {
         //printBottles();
         //count();
         //printPalindrom();
-        //Expressions exp = new Expressions();
-        //exp.start();
 
     }
 
