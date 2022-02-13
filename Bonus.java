@@ -24,7 +24,6 @@ public class Bonus {
     }
 
     public static boolean logicCheck(boolean b_one, boolean b_two, boolean b_three, boolean b_four){
-
         return (b_one | b_two | b_three | b_four) && !(b_one ^ b_two ^ b_three ^ b_four) && !(b_one & b_two & b_three & b_four);
     }
 }
