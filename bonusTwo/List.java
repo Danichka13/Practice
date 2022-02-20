@@ -69,20 +69,17 @@ public class List {
 
     public void removeByIndex(int index) {
         LinkList cur = head;
-        LinkList prev;
-        //int i = 0;
+        LinkList prev = head;
+        int i = 1;
 
-        for (int i = 0; i < index; i++) {
-            if (isEmpty()) {
-                System.out.println("Список пуст");
-                return;
-            } else {
-                prev = cur;
-                cur = cur.next;
-            }
+        while (cur != null && i != index) {
+            prev = cur;
+            cur = cur.next;
+            i++;
+        }
+        if (cur != null) {
             if (cur == head) {
                 remove();
-                //head = head.next;
             } else {
                 prev.next = cur.next;
             }
