@@ -12,7 +12,7 @@ public class Bonus {
             System.out.print("Список: ");
             list.print();
             System.out.println("Выберите действие: \n1) Добавить элемент\n" +
-                    "2) Вставить элемент в середину\n3) Удалить элемент\n" +
+                    "2) Вставить элемент в середину\n3) Удалить элемент по индексу\n" +
                     "4) Отсортировать список\n5) Очистить список\n6) Завершить работу");
             flag = scan.nextInt();
             switch (flag) {
@@ -29,7 +29,9 @@ public class Bonus {
                     break;
                 }
                 case (3): {
-                    list.remove();
+                    System.out.print("Введите индекс для удаления: ");
+                    int data = scan.nextInt();
+                    list.removeByIndex(data);
                     break;
                 }
                 case (4): {
