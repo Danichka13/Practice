@@ -14,8 +14,11 @@ public class TaskSeven {
     private static final char[] vowels = {'а', 'о', 'э', 'е', 'и', 'ы', 'у', 'ё', 'ю', 'я'};
 
     public static void main(String[] args) throws FileNotFoundException {
+        Scanner path = new Scanner(System.in);
+        System.out.println("Введите путь файла");
+        String filePath = path.nextLine();
 
-        String filePath = "Z:\\Daniil\\JavaProject\\Practice\\src\\partFour\\taskSeven\\text.txt";
+        //String filePath = "Z:\\Daniil\\JavaProject\\Practice\\src\\partFour\\taskSeven\\text.txt";
         String sentWords = "";
         Sentence sentence = null;
         try (FileReader fileReader = new FileReader(filePath)) {
